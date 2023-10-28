@@ -1,5 +1,10 @@
-function App() {
-  return <>Hello, World!</>;
-}
+import { Route } from "wouter";
+import { Home } from "./pages/Home";
 
-export default App;
+export function App() {
+  return (
+    <>
+      <Route path="/" component={Home} />
+    </>
+  );
+}
